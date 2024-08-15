@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="styling_with_javascript.js"></script>
+    <style>
+
+        #box {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            margin: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        
+        .hover-effect {
+            width: 200px;
+            height: 50px;
+            background-color: lightgreen;
+            margin: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .button {
+            padding: 10px 20px;
+            background-color: lightcoral;
+            border: none;
+            cursor: pointer;
+            margin: 20px;
+        }
+        
+        .hover-effect:hover {
+            background-color: yellow;
+        }
+
+        p {
+            color: lightcoral;
+            font-size: 20px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Dynamic Styling with JavaScript</h1>
+
+    <div id="box" onclick="changeColor()">Click Me To Change Color</div>
+    
+    <div class="hover-effect" onmouseover="changeText(this)" onmouseout="resetText(this)">Hover Over Me</div>
+    
+    <button class="button" onclick="toggleVisibility()">Thanos Snap</button>
+    
+    <p id="paragraph">Half of the Movie Cast</p>
+    
+    <div id="color-toggle-box" onclick="toggleBoxColor()">Click Me to Change Color</div>
+
+</body>
+</html>
